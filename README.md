@@ -1,10 +1,11 @@
+
 # DevArt Sitemaps for Joomla
 
 Professional Joomla 6 XML sitemap solution designed for business websites, news portals, magazines, municipalities, organizations, enterprise deployments, and high-performance websites with small or very large content collections.
 
 ![Joomla](https://img.shields.io/badge/Joomla-6.x-blue)
 ![PHP](https://img.shields.io/badge/PHP-8.2%2B-green)
-![Release](https://img.shields.io/badge/Version-1.0.0-orange)
+![Release](https://img.shields.io/badge/Version-1.0.1-orange)
 ![License](https://img.shields.io/badge/License-GPLv3-red)
 
 ---
@@ -13,9 +14,9 @@ Professional Joomla 6 XML sitemap solution designed for business websites, news 
 
 DevArt Sitemaps is a modern Joomla 6 native XML sitemap generator built for performance, scalability, reliability and production deployments.
 
-Instead of generating XML dynamically on every request, DevArt Sitemaps builds static XML files that can be served efficiently by Joomla, web servers and CDNs, dramatically reducing database load while providing excellent scalability for high-traffic websites.
+Instead of generating XML dynamically on every request, DevArt Sitemaps builds optimized static XML files that can be served efficiently by Joomla, web servers and CDNs, dramatically reducing database load while providing excellent scalability for high-traffic websites.
 
-The extension supports multiple content providers, automatic archive generation, Google News sitemaps, Joomla Scheduled Tasks and enterprise-scale sitemap management.
+The extension supports multiple content providers, automatic archive generation, Google News sitemaps, Joomla Scheduled Tasks, enterprise-scale sitemap management and production-safe sitemap validation.
 
 ---
 
@@ -34,12 +35,14 @@ Supported providers:
 
 Features include:
 
+- Static XML generation
 - Automatic sitemap generation
 - Provider-based architecture
-- Provider-specific indexes
-- Sitemap splitting
+- Automatic sitemap splitting
 - XML validation
+- Root sitemap validation
 - Automatic rebuild tools
+- Production-safe sitemap publishing
 
 ---
 
@@ -49,10 +52,11 @@ Built-in Google News sitemap generation.
 
 Features include:
 
+- Google News compatible XML
 - Recent news support
 - Automatic updates
 - XML validation
-- Google News compatible format
+- Native Joomla integration
 
 Ideal for editorial and news websites.
 
@@ -70,6 +74,7 @@ Features include:
 - Stop builds
 - Rebuild from scratch
 - Provider isolation
+- Optimized large dataset processing
 
 Suitable for long-term content archives.
 
@@ -95,12 +100,15 @@ Central management interface.
 
 Features include:
 
+- Main Sitemap information
+- Google News Sitemap information
 - Sitemap statistics
 - Scheduler status
 - Build history
 - Activity logs
 - Provider overview
 - System health information
+- Cloudflare recommendations
 
 ---
 
@@ -113,10 +121,11 @@ Features:
 - Static XML generation
 - Optimized database queries
 - Minimal server load
+- Low memory usage
 - Cloudflare friendly
 - CDN friendly
+- Enterprise scalability
 - Large dataset support
-- Low memory usage
 
 Suitable for:
 
@@ -165,6 +174,8 @@ Built-in protection includes:
 - CSRF protection
 - SQL parameter binding
 - Safe XML generation
+- Root sitemap validation
+- XML structure validation
 - Server-side validation
 - Secure file operations
 
@@ -178,8 +189,10 @@ Supported:
 
 - Joomla 6.x
 - PHP 8.2+
-- Joomla native updates
 - Joomla Scheduled Tasks
+- Joomla Update Server
+- Cloudflare
+- CDN environments
 - Modern Joomla MVC architecture
 
 Not Supported:
@@ -193,47 +206,39 @@ Not Supported:
 
 ## Current Version
 
-**1.0.0**
+**1.0.1**
 
 ---
 
-## What's New in 1.0.0
+## What's New in 1.0.1
 
 ### Added
 
-- Static XML sitemap engine
-- Joomla Articles support
-- DevArt Business support
-- DevArt Events support
-- DevArt Video support
-- Google News sitemap generation
-- Provider-based architecture
-- Monthly archive generation
-- Joomla Scheduled Tasks integration
-- Build history and activity logs
-- Dashboard with scheduler monitoring
-- Joomla Update Server support
+- Root sitemap validation to prevent nested sitemap indexes
+- Automatic detection and logging of nested sitemap indexes
+- Dashboard links for Main Sitemap and Google News Sitemap
+- Improved Cloudflare cache rule recommendations
 
 ### Improved
 
-- Joomla 6 native architecture
-- Optimized XML generation
-- Reduced database load
-- Cloudflare compatibility
-- Enterprise-ready scalability
-- Production-safe build process
+- Root sitemap now publishes only final sitemap files
+- Improved Google Search Console compatibility
+- Updated robots.txt sitemap integration
+- Improved XML validation during sitemap publication
+- Enhanced production stability
 
-### Compatibility
+### Unchanged
 
-- Joomla 6 native architecture
-- PHP 8.2+
-- Production-ready release
+- Scheduler architecture
+- Archive engine
+- Content providers
+- Sitemap generation workflow
 
 ---
 
 ## Author
 
-Kostas Stathopoulos  
+**Kostas Stathopoulos**  
 DevArt
 
 https://devart.gr
