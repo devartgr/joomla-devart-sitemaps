@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelogs>
+    <changelog>
+        <element>pkg_devartsitemaps</element>
+        <type>package</type>
+        <version>1.0.0</version>
+
+        <addition>
+            <item>Added full Joomla 6 native DevArt Sitemaps package</item>
+            <item>Added static XML sitemap generation for maximum performance</item>
+            <item>Added support for Joomla Articles sitemaps</item>
+            <item>Added support for DevArt Business sitemaps</item>
+            <item>Added support for DevArt Events sitemaps</item>
+            <item>Added support for DevArt Video sitemaps</item>
+            <item>Added Google News sitemap generation</item>
+            <item>Added provider-based sitemap architecture</item>
+            <item>Added provider-specific sitemap indexes</item>
+            <item>Added archive sitemap generation with monthly splitting</item>
+            <item>Added scheduled sitemap generation using Joomla Scheduled Tasks</item>
+            <item>Added build history and activity logging</item>
+            <item>Added dashboard with sitemap and scheduler status information</item>
+            <item>Added rebuild, continue, stop and clear operations</item>
+            <item>Added GitHub-based Joomla update server support</item>
+        </addition>
+
+        <change>
+            <item>Built using modern Joomla 6 MVC architecture and PHP 8.2+</item>
+            <item>Optimized sitemap generation for high-performance and low server load</item>
+            <item>Separated sitemap generation by provider for improved scalability</item>
+            <item>Improved archive generation for large websites with monthly XML files</item>
+            <item>Optimized database queries and build process for very large datasets</item>
+            <item>Improved compatibility with Cloudflare and CDN environments</item>
+        </change>
+
+        <security>
+            <item>Added ACL support for administrator operations</item>
+            <item>Added CSRF protection for administrator actions</item>
+            <item>Added SQL parameter binding for all database operations</item>
+            <item>Added secure file generation and XML writing</item>
+            <item>Added validation for sitemap generation tasks and provider operations</item>
+            <item>Built for Joomla 6 and PHP 8.2+ using modern namespaces and production-safe architecture</item>
+        </security>
+
+        <note>
+            <item>Initial public stable release of DevArt Sitemaps for Joomla 6</item>
+            <item>Built for Joomla 6 only with PHP 8.2+</item>
+            <item>Optimized for large websites, news portals and enterprise deployments</item>
+            <item>Always test on a staging environment before production deployment</item>
+        </note>
+    </changelog>
+</changelogs>
