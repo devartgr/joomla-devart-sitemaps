@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelogs>
+
+    <changelog>
+        <element>pkg_devartsitemaps</element>
+        <type>package</type>
+        <version>1.0.1</version>
+
+        <addition>
+            <item>Added root sitemap validation to prevent nested sitemap indexes from being published</item>
+            <item>Added automatic detection and logging of nested sitemap index files during root sitemap generation</item>
+            <item>Added direct Main Sitemap and Google News Sitemap links to the administrator dashboard</item>
+            <item>Added improved Cloudflare cache rule recommendation using URI Path contains "sitemaps"</item>
+        </addition>
+
+        <change>
+            <item>Updated the root sitemap to publish only final sitemap files for improved Google Search Console compatibility</item>
+            <item>Internal provider sitemap indexes remain available internally but are no longer exposed by the root sitemap</item>
+            <item>Updated robots.txt integration to publish both the Main Sitemap and Google News Sitemap</item>
+            <item>Improved production stability without changing the existing scheduler, archive or provider architecture</item>
+        </change>
+
+        <security>
+            <item>Added validation to prevent nested sitemap indexes from being published from the root sitemap</item>
+            <item>Improved XML validation during sitemap publication</item>
+        </security>
+
+        <note>
+            <item>Maintenance release focused on Google Search Console compatibility and production stability</item>
+            <item>No changes to scheduler, archive generation or sitemap providers</item>
+            <item>Fully compatible with existing DevArt Sitemaps installations</item>
+        </note>
+    </changelog>
+
     <changelog>
         <element>pkg_devartsitemaps</element>
         <type>package</type>
@@ -48,4 +80,5 @@
             <item>Always test on a staging environment before production deployment</item>
         </note>
     </changelog>
+
 </changelogs>
