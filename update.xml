@@ -5,7 +5,7 @@
         <description>DevArt Sitemaps for Joomla</description>
         <element>pkg_devartsitemaps</element>
         <type>package</type>
-        <client>administrator</client>
+        <client>site</client>
         <version>1.0.1</version>
 
         <infourl title="DevArt Sitemaps">https://github.com/devartgr/joomla-devart-sitemaps</infourl>
