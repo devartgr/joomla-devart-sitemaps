@@ -1,30 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <changelogs>
 
     <changelog>
         <element>pkg_devartsitemaps</element>
         <type>package</type>
-        <version>1.0.1</version>
+        <version>1.1.0</version>
+        <addition>
+            <item>Packaged language packs for 15 locales: en-GB, el-GR, fr-FR, de-DE, es-ES, it-IT, pt-PT, cs-CZ, nl-NL, pl-PL, ru-RU, uk-UA, ja-JP, tr-TR, and zh-CN.</item>
+            <item>Added SiteUrlResolver for canonical sitemap base URLs (Options sitemap_base_url → Joomla live_site → Uri::root()).</item>
+            <item>Added XmlGenerator rejection of overlong or invalid loc URLs (length, scheme, control characters, spaces).</item>
+            <item>Added schema update markers for the 1.0.x and 1.1.0 lines.</item>
+            <item>Added offline Argos language generation and Google gap-fill scripts for maintainable translations.</item>
+        </addition>
+        <change>
+            <item>Administrator Dashboard rebuilt with Exts-style hub cards and DevArt red active submenu highlight.</item>
+            <item>Articles provider loadAlternates() now applies the same public access, category, and publish-window filters as the main query.</item>
+            <item>Business, Events, and Video absolute URL builders use SiteUrlResolver and strip /administrator/.</item>
+            <item>Google News 2-day window compares sourceDate in UTC via Factory::getDate().</item>
+            <item>Package-only GitHub updateserver; removed duplicate component child updateserver.</item>
+            <item>JED/JAMSS false-positive quieting: ensureNoRunningHeavyBuild rename and non-hex control-character checks.</item>
+        </change>
+        <fix>
+            <item>Runtime .tmp directories now receive .htaccess and web.config deny rules via FileManager::ensureDirectory().</item>
+            <item>Hardened sitemap URL writing so invalid locs are skipped without failing the full build.</item>
+        </fix>
+        <note>
+            <item>Public minor release after baseline 1.0.1. Intermediate local builds (1.0.2–1.0.14) are not published separately.</item>
+            <item>Requires Joomla 6.0+ and PHP 8.3.0+</item>
+            <item>Install and update only through pkg_devartsitemaps.</item>
+            <item>For production CLI/scheduler builds, set Options sitemap_base_url or Joomla live_site.</item>
+        </note>
+    </changelog>
 
+    <changelog>
+        <element>pkg_devartsitemaps</element>
+        <type>package</type>
+        <version>1.0.1</version>
         <addition>
             <item>Added root sitemap validation to prevent nested sitemap indexes from being published</item>
             <item>Added automatic detection and logging of nested sitemap index files during root sitemap generation</item>
             <item>Added direct Main Sitemap and Google News Sitemap links to the administrator dashboard</item>
             <item>Added improved Cloudflare cache rule recommendation using URI Path contains "sitemaps"</item>
         </addition>
-
         <change>
             <item>Updated the root sitemap to publish only final sitemap files for improved Google Search Console compatibility</item>
             <item>Internal provider sitemap indexes remain available internally but are no longer exposed by the root sitemap</item>
             <item>Updated robots.txt integration to publish both the Main Sitemap and Google News Sitemap</item>
             <item>Improved production stability without changing the existing scheduler, archive or provider architecture</item>
         </change>
-
         <security>
             <item>Added validation to prevent nested sitemap indexes from being published from the root sitemap</item>
             <item>Improved XML validation during sitemap publication</item>
         </security>
-
         <note>
             <item>Maintenance release focused on Google Search Console compatibility and production stability</item>
             <item>No changes to scheduler, archive generation or sitemap providers</item>
@@ -36,7 +63,6 @@
         <element>pkg_devartsitemaps</element>
         <type>package</type>
         <version>1.0.0</version>
-
         <addition>
             <item>Added full Joomla 6 native DevArt Sitemaps package</item>
             <item>Added static XML sitemap generation for maximum performance</item>
@@ -54,28 +80,25 @@
             <item>Added rebuild, continue, stop and clear operations</item>
             <item>Added GitHub-based Joomla update server support</item>
         </addition>
-
         <change>
-            <item>Built using modern Joomla 6 MVC architecture and PHP 8.2+</item>
+            <item>Built using modern Joomla 6 MVC architecture and PHP 8.3+</item>
             <item>Optimized sitemap generation for high-performance and low server load</item>
             <item>Separated sitemap generation by provider for improved scalability</item>
             <item>Improved archive generation for large websites with monthly XML files</item>
             <item>Optimized database queries and build process for very large datasets</item>
             <item>Improved compatibility with Cloudflare and CDN environments</item>
         </change>
-
         <security>
             <item>Added ACL support for administrator operations</item>
             <item>Added CSRF protection for administrator actions</item>
             <item>Added SQL parameter binding for all database operations</item>
             <item>Added secure file generation and XML writing</item>
             <item>Added validation for sitemap generation tasks and provider operations</item>
-            <item>Built for Joomla 6 and PHP 8.2+ using modern namespaces and production-safe architecture</item>
+            <item>Built for Joomla 6 and PHP 8.3+ using modern namespaces and production-safe architecture</item>
         </security>
-
         <note>
             <item>Initial public stable release of DevArt Sitemaps for Joomla 6</item>
-            <item>Built for Joomla 6 only with PHP 8.2+</item>
+            <item>Built for Joomla 6 only with PHP 8.3+</item>
             <item>Optimized for large websites, news portals and enterprise deployments</item>
             <item>Always test on a staging environment before production deployment</item>
         </note>
