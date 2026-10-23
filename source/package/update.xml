@@ -6,12 +6,12 @@
         <element>pkg_devartsitemaps</element>
         <type>package</type>
         <client>site</client>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
         <infourl title="DevArt Sitemaps">https://github.com/devartgr/joomla-devart-sitemaps</infourl>
         <downloads>
-            <downloadurl type="full" format="zip">https://github.com/devartgr/joomla-devart-sitemaps/releases/download/v1.1.1/pkg_devartsitemaps_v1.1.1.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://github.com/devartgr/joomla-devart-sitemaps/releases/download/v1.1.2/pkg_devartsitemaps_v1.1.2.zip</downloadurl>
         </downloads>
-        <sha256>8e2fca95f5276483af77a7292ccf0fec867009050f31b63dc44785af20d431fa</sha256>
+        <sha256>175414f29989b98965dcd890d723c9138b814713c857ec545a6d36c2d2bb8471</sha256>
         <tags>
             <tag>stable</tag>
         </tags>

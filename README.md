@@ -10,7 +10,7 @@ outside normal frontend rendering.
 
 ## Package
 
-Current public version: **`1.1.1`**
+Current public version: **`1.1.2`**
 
 Contains:
 

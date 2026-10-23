@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.1.2 — 2026-10-23
+
+### Fixed
+- Fresh install no longer fails when `postflight` ensures retention indexes:
+  `MaintenanceManager` is loaded from disk because the component PSR-4
+  autoloader is not registered yet during installer `postflight`
+
+### Notes
+- Requires Joomla 6.0+ and PHP 8.3.0+
+- Install/update only through `pkg_devartsitemaps`
+
 ## 1.1.1 — 2026-10-08
 
 Hardening, large-site performance, and Joomla 7 API readiness after the 1.1.0

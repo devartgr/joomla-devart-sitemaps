@@ -4,6 +4,19 @@
     <changelog>
         <element>pkg_devartsitemaps</element>
         <type>package</type>
+        <version>1.1.2</version>
+        <fix>
+            <item>Fresh install postflight loads MaintenanceManager from disk so retention indexes can be ensured before the component PSR-4 autoloader is registered.</item>
+        </fix>
+        <note>
+            <item>Requires Joomla 6.0+ and PHP 8.3.0+</item>
+            <item>Install and update only through pkg_devartsitemaps.</item>
+        </note>
+    </changelog>
+
+    <changelog>
+        <element>pkg_devartsitemaps</element>
+        <type>package</type>
         <version>1.1.1</version>
         <fix>
             <item>Stale recovery now covers all job modes (archive 120s, other modes 600s).</item>
